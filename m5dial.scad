@@ -1,6 +1,6 @@
 // 元の穴位置に戻した三角柱
 // パラメータ
-base_length = 120;      // 底辺の長さ (mm)
+base_length = 128;      // 底辺の長さ (mm)
 prism_height = 80;     // 三角柱の高さ (mm)
 corner_radius = 3;      // 角の丸みの半径 (mm)
 side_wall_thickness = 2;  // 側面の壁の厚さ (mm)
