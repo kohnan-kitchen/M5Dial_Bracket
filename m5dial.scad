@@ -3,10 +3,10 @@
 base_length = 128;      // 底辺の長さ (mm)
 prism_height = 80;     // 三角柱の高さ (mm)
 corner_radius = 3;      // 角の丸みの半径 (mm)
-side_wall_thickness = 2;  // 側面の壁の厚さ (mm)
-base_wall_thickness = 2; // 底辺の壁の厚さ (mm)
+side_wall_thickness = 3;  // 側面の壁の厚さ (mm)
+base_wall_thickness = 3; // 底辺の壁の厚さ (mm)
 hole_diameter = 45;     // 穴の直径 (mm)
-$fn = 50;               // 丸みの解像度
+$fn = 0;               // 丸みの解像度
 
 // 三角形の高さを計算（底辺×tan(30°)）
 triangle_height = base_length * tan(30);
@@ -28,8 +28,8 @@ module inner_triangle() {
     // 高さは角度30度を保つために調整
     inner_height = inner_base * tan(30);
     // 内側三角形の位置調整（底部から上に、左端から右に）
-    x_offset = side_wall_thickness+ 3;
-    y_offset = base_wall_thickness+ 3;
+    x_offset = side_wall_thickness+ 2;
+    y_offset = base_wall_thickness+ 2;
     
     translate([x_offset, y_offset, 0])
         polygon(points=[
