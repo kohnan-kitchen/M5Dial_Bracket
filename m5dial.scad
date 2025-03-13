@@ -1,7 +1,7 @@
 // 三角柱の内側コーナーに円柱状の切り欠きによる補強を追加
 // パラメータ
 base_length = 128;      // 底辺の長さ (mm)
-prism_height = 80;      // 三角柱の高さ (mm)
+prism_height = 70;      // 三角柱の高さ (mm)
 corner_radius = 3;      // 角の丸みの半径 (mm)
 side_wall_thickness = 3;  // 側面の壁の厚さ (mm)
 base_wall_thickness = 3; // 底辺の壁の厚さ (mm)
@@ -113,6 +113,6 @@ difference() {
         // 斜面に対して垂直になるよう回転
         rotate([0, 0, -hypotenuse_angle])
         rotate([90, 0, 0])
-        translate([-10, -5, -60])
+        translate([-10, -corner_radius, -60])
         cylinder(h=hypotenuse_length, d=hole_diameter, center=true);
 }
