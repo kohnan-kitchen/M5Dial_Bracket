@@ -95,7 +95,7 @@ difference() {
         // 右下の角（60度）に円柱状の切り欠き
         inner_base = base_length - (2 * side_wall_thickness);
         translate([x_offset + inner_base - 15, y_offset, -5])
-            cylinder(r=fillet_radius, h=prism_height + 10);
+            cylinder(r=fillet_radius + 10, h=prism_height + 10);
         
         // 左上の角（30度の鋭角）に円柱状の切り欠き
         inner_height = inner_base * tan(30);
