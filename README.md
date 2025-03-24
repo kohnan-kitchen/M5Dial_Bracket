@@ -1,2 +1,3 @@
-#M5Dialをいいかんじにするstlファイルだよ！
-![image](https://github.com/user-attachments/assets/2e5a9860-2384-4e59-b5db-b2f1476517f2)
+# これは何?
+M5Dialをいいかんじにマウントするstlファイルだよ！
+![スクリーンショット 2025-03-24 16 13 00](https://github.com/user-attachments/assets/5c28c65e-d741-4bb4-a1fb-fcd0a148a1a0)
