@@ -5,7 +5,8 @@ prism_height = 70;      // 三角柱の高さ (mm)
 corner_radius = 3;      // 角の丸みの半径 (mm)
 side_wall_thickness = 3;  // 側面の壁の厚さ (mm)
 base_wall_thickness = 3; // 底辺の壁の厚さ (mm)
-hole_diameter = 45;     // 穴の直径 (mm)
+hole_diameter = 45;     // 斜面の穴の直径 (mm)
+side_hole_diameter = 15; // 追加する側面の穴の直径 (mm)
 fillet_radius = 8;      // 内側の角の補強用円柱の半径 (mm)
 $fn = 64;               // 丸みの解像度（補強部分をきれいに表示するため高めの値に設定）
 
@@ -115,4 +116,15 @@ difference() {
         rotate([90, 0, 0])
         translate([-10, -corner_radius, -60])
         cylinder(h=hypotenuse_length, d=hole_diameter, center=true);
+    
+    // 90度の辺の両側に15mmの円形の穴を追加
+    // X軸に平行な面（底面）に穴
+    translate([25, 10, prism_height/2 - 3])
+        rotate([90, 0, 0])
+        cylinder(h=side_wall_thickness+10, d=side_hole_diameter, center=false);
+    
+    // Y軸に平行な面（側面）に穴
+    translate([-1, 25, prism_height/2 - 3])
+        rotate([0, 90, 0])
+        cylinder(h=side_wall_thickness+5, d=side_hole_diameter, center=false);
 }
