@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.gcode
+*.3mf
+mock_*.stl
+body_half.stl
