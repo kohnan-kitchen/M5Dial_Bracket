@@ -14,7 +14,6 @@ M5Dialをいいかんじにマウントするstlファイルだよ！
 ![v2 組み付けイメージ](v2_assembly.png)
 
 v1 の三角フレームを、底蓋で完全に閉じられる箱型に作り直した版。
-構造は [m5dial-catm-gnss-stand](https://github.com/kohnan-kitchen/m5dial-catm-gnss-stand) を参考にしている。
 
 | 部品 | ファイル | 印刷姿勢 |
 |---|---|---|
