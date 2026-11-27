@@ -4,3 +4,4 @@ __pycache__/
 *.3mf
 mock_*.stl
 body_half.stl
+.venv-cnc/
