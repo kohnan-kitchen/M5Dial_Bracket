@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """M5Dial Bracket v2（底蓋付き・小型）— STL 生成スクリプト
 
-    ../.venv/bin/python m5dial_v2.py              # 本体・底蓋を出力
-    ../.venv/bin/python m5dial_v2.py --assembly   # 組み付けイメージ用のモックも出力
+    ../../.venv/bin/python m5dial_v2.py              # 本体・底蓋を出力
+    ../../.venv/bin/python m5dial_v2.py --assembly   # 組み付けイメージ用のモックも出力
 
 要 trimesh + manifold3d + shapely。
 
